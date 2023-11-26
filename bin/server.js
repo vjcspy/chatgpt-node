@@ -159,6 +159,7 @@ server.post('/conversation', async (request, reply) => {
 
 server.listen({
     port: settings.apiOptions?.port || settings.port || 3000,
+    host: 'chatgpt-api.ngocdiep.top',
 }, (error) => {
     if (error) {
         console.error(error);
