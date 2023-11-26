@@ -52,6 +52,7 @@ await server.register(cors, {
 server.get('/ping', () => Date.now().toString());
 
 server.post('/conversation', async (request, reply) => {
+    console.log('conversation');
     const body = request.body || {};
     const abortController = new AbortController();
 
