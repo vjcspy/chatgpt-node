@@ -158,7 +158,7 @@ server.post('/conversation', async (request, reply) => {
 });
 
 server.listen({
-    port: 3009,
+    port: 3007,
 }, (error) => {
     if (error) {
         console.error(error);
