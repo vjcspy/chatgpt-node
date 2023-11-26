@@ -159,6 +159,9 @@ server.post('/conversation', async (request, reply) => {
 
 server.listen({
     port: 3007,
+    host: '0.0.0.0',
+    readableAll: true,
+    writableAll: true,
 }, (error) => {
     if (error) {
         console.error(error);
